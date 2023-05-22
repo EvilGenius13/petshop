@@ -6,9 +6,11 @@ if (!process.env.PORT) {
 const express = require('express');
 const path = require('path');
 const favicon = require('serve-favicon');
+// Logger middleware for HTTP requests
 const logger = require('morgan');
 const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
+// Lets you use HTTP verbs such as PUT or DELETE in places where the client doesn't support it.
 const methodOverride = require('method-override')
 
 const app = express();
